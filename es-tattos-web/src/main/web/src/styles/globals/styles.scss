@@ -1,0 +1,78 @@
+// @import '~@angular/material/prebuilt-themes/indigo-pink';
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import '~@angular/material/theming';
+@import 'theme';
+@import 'palette';
+@import 'variables';
+@import 'buttons';
+@import 'mixins';
+@import 'layout';
+@import 'animations';
+// Custom theme Components
+@import 'scrollbar';
+@import 'shared/header/header.component.scss';
+@import 'shared/sidenav/sidenav.component.scss';
+@import 'shared/footer/footer.component.scss';
+@import 'home/home.component.scss';
+@import 'policy/policy.component.scss';
+@import 'register/register.component.scss';
+@import 'login/login.component.scss';
+@import 'perfil-usuario/perfil-usuario.component.scss';
+@import 'tattoo-studios/tattoo-studios.component.scss';
+@import 'buttons';
+
+// always include only once per project
+@include mat-core();
+// import our custom theme
+// specify theme class eg: <body class="my-theme"> ... </body>
+$theme: $custom-theme;
+$theme-a: $custom-theme2;
+
+.theme {
+  // use our theme with angular-material-theme mixin
+  @include angular-material-theme($theme);
+  @include header-theme($theme);
+  @include footer-theme($theme);
+  @include sidenav-theme($theme);
+  @include scroll-theme($theme);
+  @include home-theme($theme);
+  @include buttons-theme($theme);
+  @include register-theme($theme);
+  @include login-theme($theme);
+  @include policy-theme($theme);
+  @include perfil-theme($theme);
+  @include studios-theme($theme);  
+}
+
+
+.theme2 {
+  // use our theme with angular-material-theme mixin
+  @include angular-material-theme($theme-a);
+  @include header-theme($theme-a);
+  @include footer-theme($theme-a);
+  @include sidenav-theme($theme-a);
+  @include scroll-theme($theme-a);
+  @include home-theme($theme-a);
+  @include buttons-theme($theme-a);
+  @include studios-theme($theme-a);  
+  @include policy-theme($theme-a);
+  @include perfil-theme($theme-a);
+  @include login-theme($theme-a);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: $font-global;
+  font-weight: 400;
+  line-height: 2rem;
+  overflow-x: hidden;
+  * {
+    font-family: 'Raleway', sans-serif;
+  }
+  .active {
+    font-weight: bold;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,55 @@
+<div *ngIf="perfilGlobalEvent" class="perfilEvent">
+
+    <mat-grid-list cols="4">
+
+        <mat-grid-tile [colspan]="1" [rowspan]="2">
+            <img [src]="perfilGlobalEvent.photo" alt="imgStudio" />
+            <!-- TODO dgm asignar direccion para enviar. -->
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="3" [rowspan]="3">
+            <mat-tab-group animationDuration="2000ms" class="infoEvent mat-elevation-z3">
+                <mat-tab label="Datos Evento">
+
+                    <mat-card class="eventCard">
+                        <mat-card-header>
+                            <div mat-card-avatar class="example-header-image"></div>
+                            <mat-card-title>{{perfilGlobalEvent.title}}</mat-card-title>
+                            <mat-card-subtitle>{{perfilGlobalEvent.date}} </mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>
+                                {{perfilGlobalEvent.description }}
+                            </p>
+                        </mat-card-content>
+                        <!-- <mat-card-actions>
+              <button mat-button>Send a appoinment</button>
+              <button mat-button>Send a meeting</button>
+            </mat-card-actions> -->
+                    </mat-card>
+
+                </mat-tab>
+
+                <mat-tab label="Contacto">
+                    <mat-card class="eventCard">
+                        <mat-card-header>
+                            <mat-card-title>{{perfilGlobalEvent.title}}</mat-card-title>
+                            <mat-card-subtitle>Encuentranos en: </mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>Email: {{ perfilGlobalEvent.email }}</p>
+                            <p>Telefono de contacto: {{ perfilGlobalEvent.phone }}</p>
+                        </mat-card-content>
+                    </mat-card>
+                </mat-tab>
+
+            </mat-tab-group>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;height=300&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=d1lgdtohl644rklj0orp1gg1n4%40group.calendar.google.com&amp;color=%236B3304&amp;ctz=Europe%2FLondon"
+                style="border-width:0" width="250" height="300" frameborder="0" scrolling="no"></iframe>
+        </mat-grid-tile>
+
+    </mat-grid-list>
+</div>

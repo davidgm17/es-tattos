@@ -1,0 +1,72 @@
+<mat-toolbar class="header animated fadeInDown">
+    <div class="nav-item">
+        <button *ngIf="screenWidth < breakpoints.tablet_large; else template" mat-icon-button (click)="toggleSidenav()" aria-label="Menu">
+      <mat-icon class="animated rotateIn slow">menu</mat-icon>
+    </button>
+    </div>
+    <div class="logo nav-item">
+        <nav>
+            <a [routerLink]="['/' + coreLinks.home]">
+                <img class="img-fluid animated fadeIn slow" src="assets/img/logo.svg" alt="EsTattoos" />
+            </a>
+        </nav>
+    </div>
+    <div *ngIf="sessionUser !== undefined">
+        {{ sessionUser }}
+    </div>
+    <div class="nav-item login">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon class="animated rotateIn slow ">
+        account_circle
+      </mat-icon>
+    </button>
+
+        <mat-menu #menu class="menu-login">
+            <form class="example-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()" (click)="$event.stopPropagation()">
+                <mat-form-field>
+                    <input type="email" matInput placeholder="Email" formControlName="email" required />
+                    <mat-error *ngIf="
+              email?.errors &&
+              (email?.errors)['email'] &&
+              !(email?.errors)['required']
+            ">
+                        Please enter a valid email address
+                    </mat-error>
+                    <mat-error *ngIf="email?.errors && (email?.errors)['required']">
+                        Email is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input type="password" matInput placeholder="Password" formControlName="password" required />
+                    <mat-error *ngIf="
+              password?.errors &&
+              (password?.errors)['password'] &&
+              !(password?.errors)['required']
+            ">
+                        Please enter a valid password
+                    </mat-error>
+                    <mat-error *ngIf="password?.errors && (password?.errors)['required']">
+                        Password is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+                <button mat-raised-button class="mat-raised-button-primary" type="submit">
+          Enviar
+        </button>
+                <button mat-raised-button class="mat-raised-button-primary" [routerLink]="coreLinks.register">
+          Registrarse
+        </button>
+                <!--
+          <p color="primary">Registrarse</p>
+        -->
+            </form>
+        </mat-menu>
+    </div>
+</mat-toolbar>
+
+<ng-template #template>
+    <div class="navigation-tabs nav-item">
+        <a [routerLink]="link.path" mat-button *ngFor="let link of links">
+      {{ link.description | uppercase }}
+    </a>
+    </div>
+</ng-template>

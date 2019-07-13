@@ -1,0 +1,50 @@
+@import 'variables';
+@import 'mixins';
+
+@mixin buttons-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $gradient: linear-gradient(
+    to right,
+    map-get($primary, 500),
+    map-get($accent, 900)
+  );
+  .btn-outlet-white {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 0.7rem;
+    border-radius: 30px;
+    margin-top: 30px;
+    &:hover {
+      background-color: white;
+      transition: background 1000ms linear;
+      transition: color 500ms linear;
+      color: map-get($primary, 500);
+    }
+  }
+  .btn-outlet-blue {
+    @extend .btn-outlet-white;
+    color: map-get($primary, 500);
+    border: 1px map-get($primary, 500) solid;
+    width: 200px;
+    padding: 0.7rem;
+    margin-top: 0px;
+    &:hover {
+      background: $gradient;
+      color: white;
+      transition: background 1000ms linear;
+      transition: color 500ms linear;
+    }
+  }
+
+  .btn-outlet-white-W200 {
+    @extend .btn-outlet-white;
+    background: none;
+    width: 200px;
+  }
+  .mat-raised-button-primary {
+    background: $gradient;
+    color: white;
+  }
+}

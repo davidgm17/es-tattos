@@ -1,0 +1,12 @@
+<mat-sidenav-container (backdropClick)="sidePanel.close()">
+  <mat-sidenav #sidenav (keydown.escape)="sidePanel.close()" disableClose>
+    <mat-nav-list>
+      <mat-list-item *ngFor="let link of links">
+        <a matLine [href]="link.path">{{ link.description | uppercase }}</a>
+        <button mat-icon-button (click)="showInfo(link)">
+          <mat-icon>{{ link.icon }}</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+</mat-sidenav-container>

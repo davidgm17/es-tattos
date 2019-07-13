@@ -1,0 +1,674 @@
+{
+  "user": [{
+      "id": 1,
+      "userName": "userName1",
+      "firstName": "firstName1",
+      "lastName": "lastName1",
+      "age": 20,
+      "email": "fsdsdf@gsdgsdfs.com",
+      "photo": "https://source.unsplash.com/collection/2234746",
+      "phone": 987654321,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "type": "USER",
+      "appointmentList": [],
+      "eventList": [{
+          "id": 1,
+          "userId": 1,
+          "userName": "userName1",
+          "studioId": 1,
+          "studioName": "Estudio-1",
+          "date": "09-02-2019",
+          "stateId": 1,
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error."
+        },
+        {
+          "id": 2,
+          "userId": 1,
+          "userName": "userName1",
+          "studioId": 2,
+          "studioName": "Estudio-2",
+          "date": "09-02-2019",
+          "stateId": 2,
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "userName": "userName2",
+      "firstName": "firstName2",
+      "lastName": "lastName2",
+      "age": 20,
+      "email": "fsdsdf@gsdgsdfs.com",
+      "photo": "https://source.unsplash.com/random",
+      "phone": 987654321,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "type": "USER",
+      "appointmentList": [],
+      "eventList": [{
+        "id": 3,
+        "userId": 2,
+        "userName": "userName2",
+        "studioId": 1,
+        "studioName": "Estudio-1",
+        "date": "09-02-2019",
+        "stateId": 3,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error."
+      }]
+    },
+    {
+      "id": 3,
+      "userName": "userName3",
+      "firstName": "firstName3",
+      "lastName": "lastName3",
+      "age": 20,
+      "email": "fsdsdf@gsdgsdfs.com",
+      "photo": "https://source.unsplash.com/random",
+      "phone": 987654321,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "type": "USER",
+      "appointmentList": [],
+      "eventList": []
+    },
+    {
+      "id": 4,
+      "userName": "userName4",
+      "firstName": "firstName4",
+      "lastName": "lastName4",
+      "age": 20,
+      "email": "fsdsdf@gsdgsdfs.com",
+      "photo": "https://source.unsplash.com/random",
+      "phone": 987654321,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "type": "USER",
+      "appointmentList": [],
+      "eventList": []
+    },
+    {
+      "id": 11,
+      "userName": "artistName11",
+      "firstName": "Art-firstName11",
+      "lastName": "Art-lastName11",
+      "age": 20,
+      "email": "fsdsdf@gsdgsdfs.com",
+      "photo": "https://source.unsplash.com/random",
+      "phone": 987654321,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "type": "ARTIST",
+      "appointmentList": [{
+        "AppointmentId": 1,
+        "studioId": 1,
+        "studioName": "Estudio-1",
+        "applicantId": 11,
+        "applicantName": "artistName11",
+        "receiverId": "",
+        "receiverName": "",
+        "date": "09-02-2019",
+        "lastUpdate": "",
+        "stateId": 1,
+        "mesage": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+        "file": "https://source.unsplash.com/random"
+      }],
+      "eventList": [{
+          "id": 4,
+          "userId": 11,
+          "userName": "userName11",
+          "studioId": 1,
+          "studioName": "Estudio-1",
+          "date": "09-02-2019",
+          "stateId": 1,
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error."
+        },
+        {
+          "id": 5,
+          "userId": 11,
+          "userName": "userName11",
+          "studioId": 1,
+          "studioName": "Estudio-1",
+          "date": "09-02-2019",
+          "stateId": 3,
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "userName": "artistName12",
+      "firstName": "Art-firstName12",
+      "lastName": "Art-lastName12",
+      "age": 20,
+      "email": "fsdsdf@gsdgsdfs.com",
+      "photo": "https://source.unsplash.com/random",
+      "phone": 987654321,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "type": "ARTIST",
+      "appointmentList": [{
+          "AppointmentId": 1,
+          "studioId": 1,
+          "studioName": "Estudio-1",
+          "applicantId": 12,
+          "applicantName": "artistName12",
+          "receiverId": "",
+          "receiverName": "",
+          "date": "09-02-2019",
+          "lastUpdate": "",
+          "stateId": 2,
+          "mesage": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+          "file": "https://source.unsplash.com/random"
+        },
+        {
+          "AppointmentId": 1,
+          "studioId": 1,
+          "studioName": "Estudio-1",
+          "applicantId": 12,
+          "applicantName": "artistName12",
+          "receiverId": "",
+          "receiverName": "",
+          "date": "09-02-2019",
+          "lastUpdate": "",
+          "stateId": 3,
+          "mesage": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+          "file": "https://source.unsplash.com/random"
+        }
+      ],
+      "eventList": []
+    },
+    {
+      "id": 13,
+      "userName": "artistName13",
+      "firstName": "Art-firstName13",
+      "lastName": "Art-lastName13",
+      "age": 20,
+      "email": "fsdsdf@gsdgsdfs.com",
+      "photo": "https://source.unsplash.com/random",
+      "phone": 987654321,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "type": "ARTIST",
+      "appointmentList": [],
+      "eventList": []
+    },
+    {
+      "id": 101,
+      "userName": "mario",
+      "firstName": "godoy",
+      "lastName": "salamanca",
+      "password": "123",
+      "age": 24,
+      "email": "prueba@gmail.com",
+      "photo": "http://localhost:4200/assets/img/register.png",
+      "phone": 971695333,
+      "description": "gordo",
+      "eventList": null,
+      "appointmentList": null
+    }
+  ],
+  "studios": [{
+      "id": 1,
+      "photo": "https://source.unsplash.com/random",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "title": "Estudio-1"
+    },
+    {
+      "id": 2,
+      "photo": "https://source.unsplash.com/random",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "title": "Estudio-2"
+    },
+    {
+      "id": 3,
+      "photo": "https://source.unsplash.com/random",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "title": "Estudio-3"
+    },
+    {
+      "id": 4,
+      "photo": "https://source.unsplash.com/random",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "title": "Estudio-4"
+    },
+    {
+      "id": 5,
+      "photo": "https://source.unsplash.com/random",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "title": "Estudio-5"
+    },
+    {
+      "id": 6,
+      "photo": "https://source.unsplash.com/random",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "title": "Estudio-6"
+    },
+    {
+      "id": 7,
+      "photo": "https://source.unsplash.com/random",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "title": "Estudio-7"
+    },
+    {
+      "id": 8,
+      "photo": "https://source.unsplash.com/random",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "title": "Estudio-8"
+    },
+    {
+      "id": 9,
+      "photo": "https://source.unsplash.com/random",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "title": "Estudio-9"
+    },
+    {
+      "id": 10,
+      "photo": "https://source.unsplash.com/random",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "title": "Estudio-10"
+    }
+  ],
+  "studio": [{
+      "id": 1,
+      "title": "Estudio-1",
+      "email": "fsdsdf@gsdgsdfs.com",
+      "photo": "https://source.unsplash.com/random",
+      "phone": 987654321,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "appointment": true,
+      "appointmentList": [{
+          "AppointmentId": 1,
+          "studioId": 1,
+          "studioName": "Estudio-1",
+          "applicantId": 11,
+          "applicantName": "artistName11",
+          "receiverId": "",
+          "receiverName": "",
+          "date": "09-02-2019",
+          "lastUpdate": "",
+          "stateId": 1,
+          "mesage": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+          "file": "https://source.unsplash.com/random"
+        },
+        {
+          "AppointmentId": 1,
+          "studioId": 1,
+          "studioName": "Estudio-1",
+          "applicantId": 12,
+          "applicantName": "artistName12",
+          "receiverId": "",
+          "receiverName": "",
+          "date": "09-02-2019",
+          "lastUpdate": "",
+          "stateId": 2,
+          "mesage": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+          "file": "https://source.unsplash.com/random"
+        },
+        {
+          "AppointmentId": 1,
+          "studioId": 1,
+          "studioName": "Estudio-1",
+          "applicantId": 12,
+          "applicantName": "artistName12",
+          "receiverId": "",
+          "receiverName": "",
+          "date": "09-02-2019",
+          "lastUpdate": "",
+          "stateId": 3,
+          "mesage": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+          "file": "https://source.unsplash.com/random"
+        }
+      ],
+      "eventList": [{
+          "id": 1,
+          "userId": 1,
+          "userName": "userName1",
+          "studioId": 1,
+          "studioName": "Estudio-1",
+          "date": "09-02-2019",
+          "stateId": 1,
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error."
+        },
+        {
+          "id": 1,
+          "userId": 2,
+          "userName": "userName2",
+          "studioId": 1,
+          "studioName": "Estudio-1",
+          "date": "09-02-2019",
+          "stateId": 3,
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error."
+        },
+        {
+          "id": 4,
+          "userId": 11,
+          "userName": "userName11",
+          "studioId": 1,
+          "studioName": "Estudio-1",
+          "date": "09-02-2019",
+          "stateId": 1,
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error."
+        },
+        {
+          "id": 5,
+          "userId": 11,
+          "userName": "userName11",
+          "studioId": 1,
+          "studioName": "Estudio-1",
+          "date": "09-02-2019",
+          "stateId": 3,
+          "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Estudio-2",
+      "email": "fsdsdf@gsdgsdfs.com",
+      "photo": "https://source.unsplash.com/random",
+      "phone": 987654321,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "appointment": false,
+      "appointmentList": [],
+      "eventList": [{
+        "id": 2,
+        "userId": 1,
+        "userName": "userName1",
+        "studioId": 2,
+        "studioName": "Estudio-2",
+        "date": "09-02-2019",
+        "stateId": 2,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error."
+      }]
+    }
+  ],
+  "artists": [{
+      "id": 11,
+      "userName": "artistName11",
+      "firstName": "Art-firstName11",
+      "lastName": "Art-lastName11",
+      "age": 20,
+      "email": "fsdsdf@gsdgsdfs.com",
+      "photo": "https://source.unsplash.com/random",
+      "phone": 987654321,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "type": "ARTIST"
+    },
+    {
+      "id": 12,
+      "userName": "artistName12",
+      "firstName": "Art-firstName12",
+      "lastName": "Art-lastName12",
+      "age": 20,
+      "email": "fsdsdf@gsdgsdfs.com",
+      "photo": "https://source.unsplash.com/random",
+      "phone": 987654321,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "type": "ARTIST"
+    },
+    {
+      "id": 13,
+      "userName": "artistName13",
+      "firstName": "Art-firstName13",
+      "lastName": "Art-lastName13",
+      "age": 20,
+      "email": "fsdsdf@gsdgsdfs.com",
+      "photo": "https://source.unsplash.com/random",
+      "phone": 987654321,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "type": "ARTIST"
+    }
+  ],
+  "meeting": [{
+      "id": 1,
+      "userId": 1,
+      "userName": "userName1",
+      "studioId": 1,
+      "studioName": "Estudio-1",
+      "date": "09-02-2019",
+      "stateId": 1,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error."
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "userName": "userName2",
+      "studioId": 1,
+      "studioName": "Estudio-1",
+      "date": "09-02-2019",
+      "stateId": 3,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error."
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "userName": "userName1",
+      "studioId": 2,
+      "studioName": "Estudio-2",
+      "date": "09-02-2019",
+      "stateId": 2,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error."
+    },
+    {
+      "id": 4,
+      "userId": 11,
+      "userName": "userName11",
+      "studioId": 1,
+      "studioName": "Estudio-1",
+      "date": "09-02-2019",
+      "stateId": 1,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error."
+    },
+    {
+      "id": 5,
+      "userId": 11,
+      "userName": "userName11",
+      "studioId": 1,
+      "studioName": "Estudio-1",
+      "date": "09-02-2019",
+      "stateId": 3,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error."
+    }
+  ],
+  "Appointment": [{
+      "Id": 1,
+      "studioId": 1,
+      "studioName": "Estudio-1",
+      "applicantId": 11,
+      "applicantName": "artistName11",
+      "receiverId": "",
+      "receiverName": "",
+      "date": "09-02-2019",
+      "lastUpdate": "",
+      "stateId": 1,
+      "mesage": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "file": "https://source.unsplash.com/random"
+    },
+    {
+      "Id": 1,
+      "studioId": 1,
+      "studioName": "Estudio-1",
+      "applicantId": 12,
+      "applicantName": "artistName12",
+      "receiverId": "",
+      "receiverName": "",
+      "date": "09-02-2019",
+      "lastUpdate": "",
+      "stateId": 2,
+      "mesage": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "file": "https://source.unsplash.com/random"
+    },
+    {
+      "Id": 1,
+      "studioId": 1,
+      "studioName": "Estudio-1",
+      "applicantId": 12,
+      "applicantName": "artistName12",
+      "receiverId": "",
+      "receiverName": "",
+      "date": "09-02-2019",
+      "lastUpdate": "",
+      "stateId": 3,
+      "mesage": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt accusantium illo repellat molestiae id saepe maiores consequatur, porro cumque. Sapiente rem fugit ea aliquam laudantium tenetur similique dolor repellat repellendus!Deserunt tempore quaerat, reiciendis possimus incidunt soluta? Nobis, quidem aliquid reprehenderit tempora doloribus iure mollitia, rem, quibusdam debitis in hic nihil molestias obcaecati fugiat possimus totam sapiente? Laudantium, dolorum error.",
+      "file": "https://source.unsplash.com/random"
+    }
+
+  ],
+  "events": [{
+      "id": 1,
+      "photo": "https://source.unsplash.com/random",
+      "title": "vitae aliquam eros",
+      "date": "05-14-19",
+      "description": "felis. Donec tempor, est ac mattis semper, dui lectus rutrum urna, nec luctus felis purus ac tellus."
+    },
+    {
+      "id": 2,
+      "photo": "https://source.unsplash.com/random",
+      "title": "neque. Nullam ut",
+      "date": "06-11-19",
+      "description": "ut odio vel est tempor bibendum. Donec felis orci, adipiscing non,"
+    },
+    {
+      "id": 3,
+      "photo": "https://source.unsplash.com/random",
+      "title": "Class aptent taciti",
+      "date": "05-02-18",
+      "description": "elementum, dui quis accumsan convallis, ante lectus convallis est, vitae sodales nisi magna sed dui. Fusce aliquam, enim nec tempus scelerisque, lorem ipsum sodales purus, in molestie tortor nibh sit amet orci. Ut sagittis lobortis mauris. Suspendisse aliquet molestie tellus."
+    },
+    {
+      "id": 4,
+      "photo": "https://source.unsplash.com/random",
+      "title": "magnis dis parturient",
+      "date": "07-13-18",
+      "description": "Morbi sit amet massa. Quisque porttitor eros nec tellus. Nunc lectus pede, ultrices a, auctor non, feugiat nec, diam. Duis mi enim, condimentum eget, volutpat ornare, facilisis eget,"
+    },
+    {
+      "id": 5,
+      "photo": "https://source.unsplash.com/random",
+      "title": "diam. Sed diam",
+      "date": "10-24-18",
+      "description": "Ut tincidunt orci quis lectus. Nullam suscipit, est ac facilisis facilisis, magna tellus faucibus leo, in lobortis tellus justo sit amet nulla. Donec non justo. Proin non massa non ante bibendum ullamcorper. Duis cursus, diam at pretium aliquet, metus urna convallis erat, eget tincidunt"
+    },
+    {
+      "id": 6,
+      "photo": "https://source.unsplash.com/random",
+      "title": "Curabitur consequat, lectus",
+      "date": "02-24-19",
+      "description": "parturient montes, nascetur ridiculus mus. Aenean eget magna. Suspendisse tristique neque venenatis lacus. Etiam bibendum fermentum metus. Aenean sed pede nec ante blandit viverra. Donec tempus, lorem fringilla ornare placerat, orci lacus vestibulum lorem, sit amet ultricies sem magna nec quam. Curabitur vel"
+    },
+    {
+      "id": 7,
+      "photo": "https://source.unsplash.com/random",
+      "title": "congue turpis. In",
+      "date": "05-21-19",
+      "description": "fermentum convallis ligula."
+    },
+    {
+      "id": 8,
+      "photo": "https://source.unsplash.com/random",
+      "title": "Nullam feugiat placerat",
+      "date": "04-27-19",
+      "description": "sed sem egestas blandit. Nam nulla magna, malesuada vel, convallis in,"
+    },
+    {
+      "id": 9,
+      "photo": "https://source.unsplash.com/random",
+      "title": "lacinia vitae, sodales",
+      "date": "06-06-18",
+      "description": "sed, est. Nunc laoreet lectus quis massa. Mauris vestibulum, neque sed dictum eleifend, nunc risus varius orci, in consequat enim diam vel arcu. Curabitur ut odio vel est tempor bibendum. Donec felis orci, adipiscing non, luctus sit"
+    },
+    {
+      "id": 10,
+      "photo": "https://source.unsplash.com/random",
+      "title": "sagittis semper. Nam",
+      "date": "06-05-19",
+      "description": "Phasellus vitae mauris sit amet lorem semper auctor. Mauris vel turpis. Aliquam adipiscing lobortis risus. In mi pede, nonummy"
+    }
+  ],
+  "globalEvent": [{
+      "id": 1,
+      "photo": "https://source.unsplash.com/random",
+      "title": "et, magna. Praesent",
+      "date": "09-06-18",
+      "description": "convallis est, vitae sodales nisi magna sed dui. Fusce aliquam, enim nec tempus scelerisque, lorem ipsum sodales purus, in molestie tortor nibh sit amet orci. Ut sagittis lobortis mauris. Suspendisse aliquet molestie tellus. Aenean egestas hendrerit neque. In ornare sagittis felis. Donec tempor, est ac",
+      "phone": "112-114-7307",
+      "email": "nascetur.ridiculus.mus@tinciduntcongue.net"
+    },
+    {
+      "id": 2,
+      "photo": "https://source.unsplash.com/random",
+      "title": "velit egestas lacinia.",
+      "date": "05-05-18",
+      "description": "a odio semper cursus. Integer mollis.",
+      "phone": "207-484-6055",
+      "email": "lobortis@mollis.edu"
+    },
+    {
+      "id": 3,
+      "photo": "https://source.unsplash.com/random",
+      "title": "mauris ipsum porta",
+      "date": "09-07-18",
+      "description": "tortor, dictum eu, placerat eget, venenatis a, magna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam laoreet, libero et tristique pellentesque, tellus sem mollis dui, in sodales elit erat vitae risus. Duis a mi fringilla mi lacinia mattis. Integer eu lacus. Quisque imperdiet, erat nonummy ultricies ornare, elit elit fermentum risus, at",
+      "phone": "+34-483-618-697",
+      "email": "vel.venenatis@luctuset.co.uk"
+    },
+    {
+      "id": 4,
+      "photo": "https://source.unsplash.com/random",
+      "title": "Nullam vitae diam.",
+      "date": "06-17-19",
+      "description": "nunc. Quisque ornare tortor at risus. Nunc ac sem ut dolor dapibus gravida. Aliquam tincidunt, nunc ac mattis ornare, lectus ante dictum mi, ac mattis velit justo nec ante. Maecenas mi felis, adipiscing fringilla, porttitor vulputate, posuere vulputate, lacus. Cras interdum.",
+      "phone": "+34-177-627-307",
+      "email": "Integer.aliquam.adipiscing@et.co.uk"
+    },
+    {
+      "id": 5,
+      "photo": "https://source.unsplash.com/random",
+      "title": "eget, volutpat ornare,",
+      "date": "08-20-19",
+      "description": "enim, condimentum eget, volutpat ornare, facilisis eget, ipsum. Donec sollicitudin adipiscing ligula. Aenean gravida nunc sed pede. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula",
+      "phone": "263-266-1369",
+      "email": "et@aarcuSed.ca"
+    },
+    {
+      "id": 6,
+      "photo": "https://source.unsplash.com/random",
+      "title": "pede ac urna.",
+      "date": "03-21-19",
+      "description": "Maecenas iaculis aliquet diam. Sed diam lorem, auctor quis, tristique ac, eleifend vitae, erat. Vivamus nisi. Mauris nulla. Integer",
+      "phone": "493-396-8186",
+      "email": "arcu.et.pede@ametconsectetueradipiscing.co.uk"
+    },
+    {
+      "id": 7,
+      "photo": "https://source.unsplash.com/random",
+      "title": "at, velit. Cras",
+      "date": "08-15-18",
+      "description": "Aenean gravida nunc sed pede. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales at, velit. Pellentesque ultricies dignissim lacus. Aliquam rutrum lorem ac risus. Morbi metus. Vivamus euismod urna. Nullam lobortis quam a felis ullamcorper viverra.",
+      "phone": "172-443-5013",
+      "email": "urna.convallis.erat@ultrices.org"
+    },
+    {
+      "id": 8,
+      "photo": "https://source.unsplash.com/random",
+      "title": "accumsan convallis, ante",
+      "date": "11-15-18",
+      "description": "Morbi accumsan laoreet ipsum. Curabitur consequat, lectus sit amet",
+      "phone": "+34-203-153-022",
+      "email": "Quisque.imperdiet.erat@nonlorem.org"
+    },
+    {
+      "id": 9,
+      "photo": "https://source.unsplash.com/random",
+      "title": "et ultrices posuere",
+      "date": "10-15-18",
+      "description": "venenatis a, magna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam laoreet, libero et tristique pellentesque, tellus sem mollis dui, in sodales elit erat vitae risus. Duis a mi fringilla mi lacinia mattis. Integer eu lacus. Quisque imperdiet, erat nonummy ultricies ornare, elit elit fermentum risus, at fringilla purus mauris a nunc. In at pede. Cras vulputate velit",
+      "phone": "800-521-2878",
+      "email": "eu.sem@sagittisfelis.ca"
+    },
+    {
+      "id": 10,
+      "photo": "https://source.unsplash.com/random",
+      "title": "Curabitur dictum. Phasellus",
+      "date": "10-11-19",
+      "description": "aliquam eros turpis non enim. Mauris quis turpis vitae purus gravida sagittis. Duis gravida. Praesent eu nulla at sem molestie sodales. Mauris blandit enim consequat purus. Maecenas libero est, congue a, aliquet vel, vulputate eu, odio. Phasellus at augue id ante dictum cursus. Nunc mauris elit, dictum eu, eleifend nec, malesuada ut, sem. Nulla interdum. Curabitur dictum. Phasellus in felis. Nulla tempor augue",
+      "phone": "465-556-2834",
+      "email": "a.enim.Suspendisse@nisiMaurisnulla.co.uk"
+    }
+  ]
+}

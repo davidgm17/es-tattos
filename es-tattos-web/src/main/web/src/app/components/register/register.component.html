@@ -1,0 +1,79 @@
+<div class="registre_container">
+    <h1 class="h1-pt-75">Registro</h1>
+    <form class="container_form" [formGroup]="firstFormGroup">
+        <div class="questions">
+            <mat-form-field appearance="outline">
+                <mat-label>Nombre de Usuario:</mat-label>
+                <input matInput placeholder="Ej:Mario" required formControlName="userName" />
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Contraseña:</mat-label>
+                <input type="password" matInput placeholder="*****" required formControlName="password" />
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Confirmar contraseña:</mat-label>
+                <input type="password" matInput placeholder="*****" required />
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Nombre:</mat-label>
+                <input matInput placeholder="Ej:Mario" required formControlName="firstName" />
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Apellidos:</mat-label>
+                <input matInput placeholder="Ej:Godoy Salamanca" required formControlName="lastName" />
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Email:</mat-label>
+                <input type="email" matInput placeholder="Ej:Mario@gmail.com" required formControlName="email" />
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Fecha de Nacimiento:</mat-label>
+                <input matInput [matDatepicker]="picker" placeholder="Elige una fecha" required formControlName="fecha" />
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker touchUi #picker></mat-datepicker>
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Teléfono:</mat-label>
+                <input type="tel" matInput placeholder="999 999 999" formControlName="phone" />
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+
+            <!-- <input type="file" /> -->
+
+            <mat-form-field appearance="outline" class="description">
+                <mat-label>Descripción:</mat-label>
+                <textarea matInput placeholder="..." formControlName="description"></textarea>
+            </mat-form-field>
+
+            <mat-checkbox class="accept-cookies" value="condiciones - politicas">
+                He leído y acepto las condiciones de uso y política de privacidad de Genially.
+            </mat-checkbox>
+        </div>
+        <div class="register-img">
+            <img src="assets/img/register.png" alt="register" />
+        </div>
+        <div class="form-buttons">
+            <button mat-raised-button color="warn">Cancelar</button>
+            <button mat-raised-button color="accent" (click)="registerUser()">Registrarme</button>
+        </div>
+    </form>
+</div>

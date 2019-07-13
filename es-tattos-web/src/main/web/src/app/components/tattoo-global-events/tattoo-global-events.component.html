@@ -1,0 +1,26 @@
+<div class="introduction">
+    <h1>Listado de eventos globales.</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam tempora ut libero explicabo enim rem cupiditate ratione nesciunt laboriosam maiores quaerat deserunt, odit vero autem earum dolor numquam iste commodi.Officia non consequuntur sapiente?
+        Deleniti ex officiis esse nisi, aperiam quo. Laboriosam et officiis doloremque non, ea est pariatur accusantium porro aperiam error consectetur sunt facere molestias totam! Labore, dolorem.
+    </p>
+</div>
+<div class="grid-container">
+    <div class="grid-layout">
+        <div *ngFor="let event of globalEventsList" class="grid-item">
+            <a [routerLink]="['/' + coreLinks.eventDetails + event.id]">
+                <div class="shop-gallery-img material-border" [style.background]="'url(' + event.photo +')'"></div>
+            </a>
+            <div class="shop-gallery-info">
+                <a [routerLink]="['/' + coreLinks.eventDetails + event.id]">
+                    <h2>{{ event.title }}</h2>
+                </a>
+                <p>{{event.date}}</p>
+                <p>
+                    {{ event.description }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div>paginacion</div>

@@ -1,0 +1,83 @@
+$color-shadow: rgba(black, 0.125);
+$color-primary: #111133;
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-dark: darken($color-primary, 10%);
+$color-secondary: rgb(39, 131, 230);
+$color-secondary-light: lighten($color-secondary, 10%);
+$color-secondary-dark: darken($color-secondary, 10%);
+$color-text-primary: rgb(255, 255, 255);
+$color-text-secondary: rgb(0, 0, 0);
+$color-primary-aux: rgb(41, 41, 107);
+$color-secondary-aux: rgba(30, 9, 148, 0.769);
+
+$scrollbar: linear-gradient(45deg, $color-primary 0%, $color-secondary 100%);
+
+$btn-outlet: $color-secondary-dark;
+
+$btn-ob-hover: linear-gradient(45deg, $color-primary 0%, $color-secondary 100%);
+
+$mat-custom-primary: (
+  50 : #eaf6f8,
+  100 : #c9eaed,
+  200 : #a6dce2,
+  300 : #82cdd6,
+  400 : #67c3cd,
+  500 : #4cb8c4,
+  600 : #45b1be,
+  700 : #3ca8b6,
+  800 : #33a0af,
+  900 : #2491a2,
+  A100 : #dffaff,
+  A200 : #acf3ff,
+  A400 : #79ecff,
+  A700 : #5fe9ff,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$mat-custom-accent: (
+  50 : #e8faf5,
+  100 : #c5f2e6,
+  200 : #9ee9d6,
+  300 : #77e0c6,
+  400 : #59dab9,
+  500 : #3cd3ad,
+  600 : #36cea6,
+  700 : #2ec89c,
+  800 : #27c293,
+  900 : #1ab783,
+  A100 : #ecfff8,
+  A200 : #b9ffe6,
+  A400 : #86ffd4,
+  A700 : #6dffcb,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+    )
+);

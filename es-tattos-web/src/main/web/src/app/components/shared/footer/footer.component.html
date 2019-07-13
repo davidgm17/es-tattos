@@ -1,0 +1,36 @@
+<!-- footer -->
+<div class="footer">
+  <div class="footer-bg">
+    <div class="footer-seccion-left">
+      <div class="social">
+        <i class="fab fa-facebook-square"></i>
+        <div>Facebook</div>
+      </div>
+      <div class="social">
+        <i class="fab fa-twitter-square"></i>
+        <div>Twitter</div>
+      </div>
+      <div class="social">
+        <i class="fab fa-linkedin"></i>
+        <div>Linkedin</div>
+      </div>
+      <div class="social">
+        <i class="fab fa-instagram"></i>
+        <div>Instagram</div>
+      </div>
+    </div>
+    <div class="footer-seccion-center">
+      <div class="eslogan-footer">
+        <div><img src="assets/img/logo.2.svg" alt="" /></div>
+      </div>
+    </div>
+    <div class="copy"><span>©Copyright ©2019.</span></div>
+    <div class="footer-seccion-right">
+      <div *ngFor="let link of footerLinks">
+        <a [routerLink]="link.path" mat-button>
+          {{ link.description | uppercase }}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,82 @@
+<div *ngIf="perfilStudio" class="perfilStudio">
+
+    <mat-grid-list cols="4">
+
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <img [src]="perfilStudio.photo" alt="imgStudio" />
+            <!-- TODO dgm asignar direccion para enviar. -->
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="3" [rowspan]="2">
+            <mat-tab-group animationDuration="2000ms" class="infoStudio mat-elevation-z3">
+                <mat-tab label="Datos Estudio">
+
+                    <mat-card class="studyCard">
+                        <mat-card-header>
+                            <mat-card-title>{{perfilStudio.studioName}}</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>
+                                {{perfilStudio.description }}
+                            </p>
+                        </mat-card-content>
+                    </mat-card>
+
+                </mat-tab>
+
+                <mat-tab label="Contacto">
+                    <mat-card class="studyCard">
+                        <mat-card-header>
+                            <mat-card-title>{{perfilStudio.studioName}}</mat-card-title>
+                            <mat-card-subtitle>Encuentranos en: </mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <p>Email: {{ perfilStudio.email }}</p>
+                            <p>Telefono de contacto: {{ perfilStudio.phone }}</p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <!-- Crear un nuevo metodo para enviar un apoitment-->
+                            <form (ngSubmit)="sendAppointment()">
+                                <mat-form-field>
+                                    <textarea matInput placeholder="Write here ..." id="mesage" [(ngModel)]="appointment.mesage" name="mesage"></textarea>
+                                </mat-form-field>
+                                <button mat-raised-button type="submit">Send a appoinment.</button>
+                            </form>
+
+
+
+                            <form (ngSubmit)="sendMeeting()">
+                                <mat-form-field>
+                                    <textarea matInput placeholder="Write here ..." id="meetingDescription" [(ngModel)]="meeting.description" name="meetingDescription"></textarea>
+                                </mat-form-field>
+                                <button mat-raised-button type="submit">Send a Meeting.</button>
+                            </form>
+                        </mat-card-actions>
+                    </mat-card>
+                </mat-tab>
+
+
+                <mat-tab label="Citas">
+                    <app-event-acordeon [toList]='perfilStudio.eventList'> </app-event-acordeon>
+                </mat-tab>
+
+
+                <mat-tab label="Peticiones">
+                    <app-event-acordeon [toList]='perfilStudio.appointmentList'> </app-event-acordeon>
+                </mat-tab>
+
+                <!-- Añadido lista de eventos globales -->
+                <mat-tab label="Eventos Globales">
+                    <app-event-acordeon [toList]='perfilStudio.globalEventList'> </app-event-acordeon>
+                </mat-tab>
+
+            </mat-tab-group>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;height=300&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=d1lgdtohl644rklj0orp1gg1n4%40group.calendar.google.com&amp;color=%236B3304&amp;ctz=Europe%2FLondon"
+                style="border-width:0" width="250" height="300" frameborder="0" scrolling="no"></iframe>
+        </mat-grid-tile>
+
+    </mat-grid-list>
+</div>

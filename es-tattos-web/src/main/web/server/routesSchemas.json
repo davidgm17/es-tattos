@@ -1,0 +1,234 @@
+/**
+Login POST /auth/login
+*/
+User {
+  mail: String;
+  password: String;
+}
+
+
+/*
+Usuario descripcion: 'http://localhost:3000/user/details/:id',
+*/
+
+User {
+  id: Number;
+  userName: String;
+  firstName: String;
+  lastName: String;
+  age: Number;
+  email: String;
+  photo: String;
+  phone: Number;
+  description: String;
+  appointmentList: Appointment[];
+  eventList: Meeting[];
+  type: String;
+}
+
+Appointment {
+  id: Number;
+  studioId: Number;
+  studioName: String;
+  applicantId: Number;
+  applicantName: String;
+  receiverId: Number;
+  receiverName: String;
+  date: Date;
+  lastUpdate: Date;
+  stateId: Number;
+  mesage: String;
+}
+
+Meeting {
+  id: Number;
+  userId: Number;
+  userName: String;
+  studioId: Number;
+  studioName: String;
+  date: Date;
+  stateId: Number;
+  description: String;
+}
+
+
+/**
+Listar usuarios: 'http://localhost:3000/users/',
+*/
+UserList[] {
+  id: Number;
+  firstName: String;
+  lastName: String;
+  photo: String;
+  description: String;
+  type: String;
+}
+
+/**
+Listar tatuadores: 'http://localhost:3000/artists/',
+*/
+UserList[] {
+  id: Number;
+  firstName: String;
+  lastName: String;
+  photo: String;
+  description: String;
+  type: String;
+}
+
+/*
+Listar studios 'http://localhost:3000/studios/',
+*/
+
+StudioList[] {
+  id: Number;
+  photo: String;
+  description: String;
+  title: String;
+}
+
+/**
+Dame 1 estudio 'http://localhost:3000/studio/details/:id',
+*/
+
+Studio {
+  id: Number;
+  photo: String;
+  description: String;
+  title: String;
+  phone: Number;
+  email: String;
+  appointment: Boolean;
+  appointmentList: Appointment[];
+  eventList: Meeting[];
+}
+
+Appointment {
+  id: Number;
+  studioId: Number;
+  studioName: String;
+  applicantId: Number;
+  applicantName: String;
+  receiverId: Number;
+  receiverName: String;
+  date: Date;
+  lastUpdate: Date;
+  stateId: Number;
+  mesage: String;
+  file: String;
+}
+
+Meeting {
+  id: Number;
+  userId: Number;
+  userName: String;
+  studioId: Number;
+  studioName: String;
+  date: Date;
+  stateId: Number;
+  description: String;
+}
+
+
+/*
+Guardar usuario nuevo: PUT  'http://localhost:3000/user/details/',
+*/
+
+User {
+  userName: String;
+  firstName: String;
+  lastName: String;
+  password: String;
+  age: Number;
+  email: String;
+  photo: String;
+  phone: Number;
+  description: String;
+}
+
+/*
+Nueva cita para tatuajes: PUT 'http://localhost:3000/meeting',
+*/
+Meeting {
+  userId: Number;
+  userName: String;
+  studioId: Number;
+  studioName: String;
+  date: Date;
+  stateId: Number;
+  description: String;
+}
+
+/**
+Nueva peticion de trabajo de un tatuador a un estudio
+PUT --> http://localhost:3000/appointment/
+*/
+
+Appointment {
+  studioId: Number;
+  studioName: String;
+  applicantId: Number;
+  applicantName: String;
+  date: Date;
+  lastUpdate: Date;
+  stateId: Number;
+  mesage: String;
+}
+
+
+/*
+Nuevo evento-global: PUT 'http://localhost:3000/events/add',
+*/
+
+GlobalEvent {
+  title: String;
+  date: Date;
+  description: String;
+  phone: Number;
+  email: String;
+  photo: {};
+}
+
+images {
+  path: String;
+  tagName: String;
+  uploadDate: Date;
+  descrition: String;
+}
+
+/*
+Dame evento-global: GET 'http://localhost:3000/events/details/:id',
+*/
+GlobalEvent {
+  id: Number;
+  photo: String;
+  title: String;
+  date: Date;
+  description: String;
+  phone: Number;
+  email: String;
+}
+images {
+  path: String;
+  tagName: String;
+  uploadDate: Date;
+  descrition: String;
+}
+
+
+/*
+Dame lista de eventos-global: GET 'http://localhost:3000/events',
+*/
+
+GlobalEventList {
+  id: Number;
+  title: String;
+  date: Date;
+  description: String;
+  photo: (images) {
+    path: String;
+    tagName: String;
+    uploadDate: Date;
+    descrition: String;
+  }
+}

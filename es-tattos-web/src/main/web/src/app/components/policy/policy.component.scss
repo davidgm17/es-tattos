@@ -1,0 +1,42 @@
+@import 'variables';
+@import 'mixins';
+
+@mixin policy-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $gradient: linear-gradient(
+    to right,
+    map-get($primary, 500),
+    map-get($accent, 900)
+  );
+  .policyBody {
+    margin-top: $header-height * 2;
+    display: flex;
+    height: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: map-get($primary, 900);
+    // background: $gradient;
+    h1 {
+      text-align: center;
+    }
+    .policyParraf {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      /*@include mediaQuery('screen-small', 'max') {
+        padding: 2rem;
+      }*/
+    }
+    @include mediaQuery('screen-small', 'max') {
+      /* h1 {
+        text-align: center;
+      }*/
+      .policyParraf {
+        padding: 2rem;
+      }
+    }
+  }
+}

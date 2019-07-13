@@ -1,0 +1,13 @@
+@import '~@angular/material/theming';
+@import 'palette';
+
+@include mat-core();
+
+$custom-theme-primary: mat-palette($mat-custom-primary);
+$custom-theme-accent: mat-palette($mat-custom-accent);
+$custom-theme: mat-light-theme($custom-theme-primary, $custom-theme-accent);
+
+$test1: mat-palette($mat-yellow);
+$test2: mat-palette($mat-orange);
+$test3: mat-palette($mat-red);
+$custom-theme2: mat-light-theme($test1, $test2, $test3);

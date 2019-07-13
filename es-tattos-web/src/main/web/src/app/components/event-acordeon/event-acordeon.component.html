@@ -1,0 +1,30 @@
+<mat-accordion *ngIf='toList' class="event-acordeon-container">
+
+    <mat-expansion-panel *ngFor='let object of toList; let i = index' [expanded]="step === i" (opened)="setStep(i)" hideToggle>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                From: {{object.userName || object.applicantName || object.title }}
+                <p *ngIf='object.title'> --> {{object.title}}</p>
+            </mat-panel-title>
+            <mat-panel-description>
+                {{object.date}}
+                <mat-icon>chrome_reader_mode</mat-icon>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>{{object.description || object.mesage}} </p>
+
+        <mat-action-row>
+            <button mat-button> {{object.stateId}} </button>
+            <i class="material-icons" (click)="objectAcept(object)">
+        check_circle_outline
+      </i>
+            <i class="material-icons " color="warn" (click)=" objectDelete(object)">
+        delete_outline
+      </i>
+            <button mat-button color="warn" *ngIf='i==1' (click)="prevStep()">Previous</button>
+            <button mat-button color="primary" *ngIf='i+1!= toList.length' (click)="nextStep()">Next</button>
+            <button mat-button color="primary" *ngIf='i+1== toList.length' (click)="nextStep()">End</button>
+        </mat-action-row>
+    </mat-expansion-panel>
+
+</mat-accordion>

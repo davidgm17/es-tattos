@@ -1,0 +1,21 @@
+@mixin sidenav-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $gradient: linear-gradient(to right, map-get($primary, 500), map-get($accent, 500));
+  .mat-sidenav-container {
+    position: unset;
+    height: 100%;
+  }
+  .mat-sidenav {
+    width: auto;
+    min-width: 50%;
+  }
+  .mat-list-item {
+    text-align: center;
+    .mat-icon {
+      background: $gradient;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<!-- Es una copia barata de tatto-studios solo para testear-->
+<div style="margin-top:150px" class="introduction">
+  <h1>Listado de usuarios.</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam tempora ut
+    libero explicabo enim rem cupiditate ratione nesciunt laboriosam maiores
+    quaerat deserunt, odit vero autem earum dolor numquam iste commodi.Officia
+    non consequuntur sapiente? Deleniti ex officiis esse nisi, aperiam quo.
+    Laboriosam et officiis doloremque non, ea est pariatur accusantium porro
+    aperiam error consectetur sunt facere molestias totam! Labore, dolorem.
+  </p>
+</div>
+<div class="grid-container">
+  <div class="grid-layout">
+    <div *ngFor="let user of userList" class="grid-item">
+      <a [routerLink]="['/' + coreLinks.artistDetails + user.id]">
+        <div
+          class="shop-gallery-img material-border"
+          style="background-image: url(https://source.unsplash.com/random)"
+        ></div>
+      </a>
+      <div class="shop-gallery-info">
+        <a [routerLink]="['/' + coreLinks.artistDetails + user.id]">
+          <h2>{{ user.firstName + ' ' + user.lastName }}</h2>
+        </a>
+        <p>
+          {{ user.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div>paginacion</div>

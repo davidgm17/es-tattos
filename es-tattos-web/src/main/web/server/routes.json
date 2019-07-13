@@ -1,0 +1,5 @@
+{
+  "/Es.Tatto_404/*": "/$1",
+  "/artist/details/:id": "/user/:id",
+  "/:resource/details/:id": "/:resource/:id"
+}

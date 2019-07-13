@@ -1,0 +1,87 @@
+@import 'variables';
+@import 'palette';
+// footer
+@mixin footer-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $gradient: linear-gradient(
+    to right,
+    map-get($primary, 500),
+    map-get($accent, 900)
+  );
+
+  .footer {
+    background: $gradient;
+  }
+  .footer-bg {
+    display: flex;
+    height: 500px;
+    @include mediaQuery('screen-small', 'max') {
+      height: 100%;
+    }
+    flex-wrap: wrap;
+    background-color: #00000075;
+    color: white;
+    .footer-seccion-left {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      .social {
+        display: flex;
+        width: 150px;
+        margin: 10px 0 10px 0px;
+        i {
+          font-size: 35px;
+          margin-right: 5px;
+        }
+      }
+      width: 40%;
+      @include mediaQuery('screen-small', 'max') {
+        width: 50%;
+        order: 2;
+      }
+    }
+
+    .footer-seccion-center {
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .eslogan-footer {
+        img {
+          width: 100%;
+        }
+      }
+      @include mediaQuery('screen-small', 'max') {
+        width: 100%;
+      }
+    }
+
+    .footer-seccion-right {
+      width: 40%;
+      @include mediaQuery('screen-small', 'max') {
+        width: 50%;
+        order: 2;
+      }
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      div {
+        margin: 5px;
+      }
+    }
+  }
+  .copy {
+    position: absolute;
+    @include mediaQuery('screen-small', 'max') {
+      position: relative;
+      order: 1;
+    }
+    align-self: flex-end;
+    text-align: center;
+    width: 100%;
+  }
+}
